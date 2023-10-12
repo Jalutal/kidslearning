@@ -66,7 +66,9 @@ a:hover {
     margin: 0;
     padding: 0;
 }
-
+.burger {
+    display: none;
+}
 
 /* =============================== LOGO PRINCIPAL AVEC BOUTON ============================== */
 .banner {
@@ -128,7 +130,7 @@ main .cours p {
 }
 .cours_flex li {
     width: 20vw;
-    height: 60vh; 
+    height: 80vh; 
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -217,6 +219,7 @@ main .cours p {
     font-weight: bold;
 }
 
+
 /* =============================== SECTION CONTACT AVEC FORMULAIRE ============================== */
 .contact {
     background-color: #ECF0F1;
@@ -289,6 +292,63 @@ footer p {
 }
 
 
+/* =============================== RESPONSIVE ============================== */
+@media screen and (max-width : 600px) {
+    .banner h1{
+        font-size: 3rem;
+    }    
+    .burger {
+            display: block;        
+    }
+    .nav {
+            display: none;
+    }
+    .burger img {       
+           width: 50px;
+           height: 50px;
+    }
+    .nav_burger {
+            display: none;
+            background-color: #2D3E50;
+            color: black;
+            list-style-type: none;
+            font-family: "Muli";
+            border: 1px solid transparent;
+    }
+    .burger:hover {
+            .nav_burger {
+                display: block            
+            }
+    }
+    .carousel img {
+            position: relative;
+            top: -50px;
+            left: 0px;
+            margin: auto;
+            object-fit: cover; 
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;            
+    }
+    .btn_cours {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .carousel img {
+        position: relative;
+        top: -50px;
+        left: 30px;
+        margin: auto;
+        object-fit: cover; 
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;            
+        }
+    .btn_cours {
+        font-size: 10px;
+    }
+}
 
 /* =============================== PREPARATION - IDEE CAROUSEL ==============================
 .carousel { 
