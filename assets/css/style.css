@@ -1,0 +1,343 @@
+
+/* =============================== PREPARATION DE LA PAGE ============================== */
+
+@font-face {
+    font-family: "Muli";
+    src: url(/assets/fonts/Muli.ttf);
+}
+@font-face {
+    font-family: "Muli Bold";
+    src: url(/assets/fonts/Muli-Bold.ttf);
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(/assets/fonts/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Nunito Italic";
+    src: url(/assets/fonts/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0; 
+}
+
+body {
+    font-family: Muli;
+    background-color: #ECF0F1;
+}
+
+header {
+    background-color: #2D3E50;
+    height: 20vh;
+    font-family: Nunito;
+    font-weight: bold;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+header img {
+    width: 200px;
+    height: 90px;
+}
+header a {
+    text-decoration: none;
+    transition: all 0.5s ease-out ;
+    color: white;    
+}
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #2D3E50;
+    border: 1px solid #C0192A;
+}
+.hr {
+    background-color: #DC5749;
+    height: 0.5vh;
+    margin: 0;
+    padding: 0;
+}
+.banner {
+background-image: url(/assets/img/banner.jpeg);
+    background-size: cover;
+    background-position: center;    
+    color: #2D3E50;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 60vh;
+    padding: 20px
+}
+.banner h1 {
+    padding: 130px;
+}
+
+.button {
+    margin: auto;
+    background-color: #E84C3D;
+    border-radius: 10px;
+    width: 8vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: none;
+    font-weight: lighter;
+    padding-top: 15px;
+    transition: all 0.5s ease-out ;    
+}
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #C0192A;
+}
+
+.cours {
+    background-color: #ECF0F1;
+}
+main .cours h2, p {
+    text-align: center;     
+}
+main .cours h2 {
+    padding-top: 50px;
+    font-size: 2em;
+    color: #2C3D4F;
+}
+main .cours p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.cours_flex {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+.cours_flex li {
+    width: 20vw;
+    height: 60vh; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.cours_flex li h3 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.cours_flex li img {
+    object-fit: cover; 
+    width: 100%;
+    height: 300px;
+}
+.cours_descriptif {
+    font-weight: lighter;
+}
+.btn_cours {
+    margin: auto;
+    margin-top: 20px;
+    background-color: #E84C3D;
+    border-radius: 5px;
+    width: 12vw;
+    height: 3vh;
+    text-align: center;
+    color: white;
+    text-shadow: none;
+    font-weight: lighter;
+    padding: 10px;
+    transition: all 0.5s ease-out ;
+}
+.btn_cours:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #C0192A;
+}
+.ressources {
+    background-color: #ECF0F1;
+    position: relative;
+}
+.ressources h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 2em;
+    color: #2C3D4F;
+    text-align: center;
+}
+.carousel { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding-bottom: 50px;
+    font-family: Nunito Italic;
+}
+.carousel li {    
+    width: 20vw;     
+    background-color: white;
+    padding: 20px;    
+    box-shadow: 1px 2px #EFEDEC;    
+}
+.carousel img {
+    position: relative;
+    top: -50px;
+    left: 130px;
+    margin: auto;
+    object-fit: cover; 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid white;
+    box-shadow: 1px 2px #EFEDEC;
+}
+
+.carousel .avis {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.carousel .signature {
+    text-align: right;
+    font-weight: bold;
+}
+.contact {
+    background-color: #ECF0F1;
+}
+.contact h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 2em;
+    color: #2C3D4F;
+    text-align: center;
+}
+.contact p {
+    padding-bottom: 100px;
+}
+.contact .formulaire {
+    background-color: white;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    box-shadow: 1px 1px 3px gray;
+}
+.contact ul {
+    list-style-type: none;
+}
+.btn_form {
+    margin: left;
+    margin-top: 20px;
+    background-color: #E84C3D;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 5vw;
+    height: 3vh;
+    text-align: center;
+    color: white;
+    text-shadow: none;
+    font-weight: lighter;
+    padding: 10px;
+    border: 1px solid black;
+    transition: all 0.5s ease-out ;
+}
+.btn_form:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #C0192A; 
+}
+input, textarea {
+    border: 1px solid rgb(206, 206, 206);
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 92%;
+    height: 2em; 
+}
+footer {
+    background-color: #2D3E50;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    color: #EFF8FD;
+    font-size: 1.1em;
+}
+footer img {        
+    width: 20vw;
+    padding-bottom: 30px;
+}
+footer p {
+    padding-bottom: 20px;
+}
+
+
+
+/* 
+.carousel { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.carousel li {
+    top: -10%;
+    width: 20vw;
+    height: 60vh; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.carousel img {
+    margin: auto;
+    object-fit: cover; 
+    width: 50%;
+    height: 300px;
+}
+
+.img1 {
+    position: absolute;
+}
+.carousel .avis {
+    text-align: left;
+}
+.carousel .signature {
+    text-align: right;
+}
+
+
+
+
+/*
+.carousel figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 5s slidy infinite;
+}
+ @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  } */
