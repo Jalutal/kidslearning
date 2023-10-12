@@ -17,36 +17,35 @@
     font-family: "Nunito Italic";
     src: url(/assets/fonts/Nunito-Italic-VariableFont_wght.ttf);
 }
-
 * {
-    margin: 0; 
+    margin: 0;    
 }
-
 body {
     font-family: Muli;
     background-color: #ECF0F1;
 }
 
+
+
+/* =============================== HEADER EN FLEX AVEC NAVBAR ============================== */
 header {
     background-color: #2D3E50;
-    height: 20vh;
+    height: 15vh;
     font-family: Nunito;
     font-weight: bold;
     color: white;
 }
-
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;    
 }
-
 header ul {
     display: flex;
     list-style-type: none;
     gap: 50px;
+    padding-top: 30px;
 }
-
 header img {
     width: 200px;
     height: 90px;
@@ -67,6 +66,9 @@ a:hover {
     margin: 0;
     padding: 0;
 }
+
+
+/* =============================== LOGO PRINCIPAL AVEC BOUTON ============================== */
 .banner {
 background-image: url(/assets/img/banner.jpeg);
     background-size: cover;
@@ -82,7 +84,6 @@ background-image: url(/assets/img/banner.jpeg);
 .banner h1 {
     padding: 130px;
 }
-
 .button {
     margin: auto;
     background-color: #E84C3D;
@@ -102,6 +103,7 @@ background-image: url(/assets/img/banner.jpeg);
     border: 1px solid #C0192A;
 }
 
+/* =============================== SECTION COURS EN FLEX ============================== */
 .cours {
     background-color: #ECF0F1;
 }
@@ -164,6 +166,9 @@ main .cours p {
     color: black;
     border: 1px solid #C0192A;
 }
+
+
+/* =============================== RESSOURCES EN FLEX (AJOUTER CAROUSEL + RESPONSIVE SUR IMGS) ============================== */
 .ressources {
     background-color: #ECF0F1;
     position: relative;
@@ -202,7 +207,6 @@ main .cours p {
     border: 5px solid white;
     box-shadow: 1px 2px #EFEDEC;
 }
-
 .carousel .avis {
     text-align: left;
     padding-top: 10px;
@@ -212,6 +216,8 @@ main .cours p {
     text-align: right;
     font-weight: bold;
 }
+
+/* =============================== SECTION CONTACT AVEC FORMULAIRE ============================== */
 .contact {
     background-color: #ECF0F1;
 }
@@ -263,7 +269,7 @@ input, textarea {
     height: 40px;
     border-radius: 5px;
     margin-bottom: 15px;
-    width: 92%;
+    width: 90%;
     height: 2em; 
 }
 footer {
@@ -284,7 +290,7 @@ footer p {
 
 
 
-/* 
+/* =============================== PREPARATION - IDEE CAROUSEL ==============================
 .carousel { 
     display: flex;
     justify-content: center;
